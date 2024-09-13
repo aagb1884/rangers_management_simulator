@@ -1,0 +1,17 @@
+.footer-container {
+  margin: 3vh 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  letter-spacing: normal;
+  color: var(--secondaryColor);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--secondaryColor);
+  border-bottom: 1px solid var(--secondaryColor);
+}
