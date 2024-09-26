@@ -27,7 +27,7 @@ function MainComponent({
     {menuToggle && <Header />}
     <div className="mainComponent-container">
       
-      <h1>You are Derek Adams</h1>
+      <h1>You are the Rangers Manager</h1>
       
         <div className="mainComponent-imageAndText">
         <label className="mainComponent-menuBtn" htmlFor="menuToggle">

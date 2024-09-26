@@ -1,106 +1,82 @@
-// import victoriaPark from '../images/GlobalEnergyStadiumDingwall.jpg';
-// import tonyMacaroni from '../images/Almondvale_Stadium.jpg';
-// import celticPark from '../images/Celtic_park_2.jpg';
-// import tynecastle from '../images/Tynecastle_Park.jpg';
-// import smisa from '../images/SMISA.jpg';
-// import greetings from '../images/greetings.jpg';
-// import gorgieCityFarm from '../images/gorgie-farm.jpg';
-// import joyfulPeeps from '../images/people_jumping_happiness_happy_fun_young_joy_jump-875444.jpg';
-// import oldTimeyJourno from '../images/Journalist_With_Pipe.jpg';
-// import scotsport from '../images/scotsport.jpg';
-// import sportscene from '../images/sportscene.jpg';
-// import oofSizeLarge from '../images/oof_size_large.jpg';
-// import wyvern from '../images/F._21r._Wyvern.jpg';
-// import christmasPresents from '../images/christmas_present.jpg';
-// import buckled from '../images/buckled.jpg';
-// import helloDarkness from '../images/hello_darkness.gif';
-// import happyNewYear from '../images/happy_new_year.jpg';
-// import kingsley from '../images/kingsley.jpg';
-// import hugeMistake from '../images/huge_mistake.jpg';
-// import turkey from '../images/turkey.jpg';
-// import ruPaul from '../images/rupaul.jpg';
-// import meh from '../images/meh.jpg';
-// import fisticuffs from '../images/Giulio_del_Torre_Zwei_raufende_Buben_1927.jpg';
-// import kneeInBalls from '../images/Knee_Kick_to_Groin.jpg';
-// import hairPulling from '../images/The_Laws_of_Hywel_Dda_(f.15.v)_hair_pulling_(cropped).png';
-// import wallPunch from '../images/Walll_PANCH.jpg';
-// import jousting from '../images/Paulus_Hector_Mair_Tjost_fig2.jpg';
-// import bestBoss from '../images/best_boss.jpg';
-// import bellEnd from '../images/bell_end.jpg';
-// import windowClosed from '../images/window_closed.jpg';
-// import playerSigned from '../images/signing1.jpg';
-// import scarfAloft from '../images/scarf_aloft.jpg';
-// import scouting from '../images/buy_a_player.jpg';
-// import buyHim from '../images/buy_a_player2.jpg';
-// import redknapp from '../images/redknapp.jpg';
-// import capSoMeme from '../images/cap_so_meme.jpeg';
-// import deek1 from '../images/deek1.jpg';
-// import deek2 from '../images/deek2.jpg';
-// import deek3 from '../images/deek3.jpg';
-// import deek4 from '../images/deek4.jpg';
-// import deek5 from '../images/deek5.jpg';
-// import deek6 from '../images/deek6.jpg';
-// import deek7 from '../images/deek7.jpg';
-
+import windowClosed from '../images/window_closed.jpg'
+import newManager from '../images/new-manager.png';
+import pipe from '../images/Journalist_With_Pipe.jpg';
 // const firstNames = ["Chad", "Jortson", "Hot-Tod", "Popey", "Tim", "Jolkien", "Clolin", "Llewelyn", "Alfie", "Josh", "Porous", "Pip", "Dan", "Thanos", "Adamski", "Trey", "Clive", "Harris"];
 
 // const lastNames = ["Whittle-Harpington", "Thwenks", "With the good hair", "Borthwick-Juniper", "Fey","Rash", "Swift", "Coldhorn", "Horus", "Cloche","Cummings", "Minsk", "feat. Seal", "Jeevesy", "Dunne-Dunne"];
  
 // const positions = ["centre back", "left back", "right back", "defensive midfielder", "midfield lynchpin", "ball-playing centre back", "goalkeeper", "no nonsense centre back", "wing back", "midfield enforcer", "spare kidney for Yan Dhanda"];
 
-// function getRandomItem(array) {
-//     return array[Math.floor(Math.random() * array.length)];
-//   }
+// const signings = [
+//   {"name": "A Giant Leg", "position": "Centre Forward",  "image": windowClosed, "transfer": "for £4.7 million"},
+//   {"name": "Small Foot", "position": "Left Back",  "image": pipe, "transfer": "on loan"},
+//   {"name": "A Giant Leg", "position": "Centre Forward",  "image": windowClosed, "transfer": "for £4.7 million"},
+//   {"name": "Small Foot", "position": "Left Back",  "image": pipe, "transfer": "on loan"},
+//   {"name": "A Giant Leg", "position": "Centre Forward",  "image": windowClosed, "transfer": "for £4.7 million"},
+//   {"name": "Small Foot", "position": "Left Back",  "image": pipe, "transfer": "on loan"},
+//   {"name": "A Giant Leg", "position": "Centre Forward",  "image": windowClosed, "transfer": "for £4.7 million"},
+//   {"name": "Small Foot", "position": "Left Back",  "image": pipe, "transfer": "on loan"}
+// ]
 
-// const texts = [
-//   {
-//     id: 1,
-//     date: "19/11/23",
-//     text: 
-// `You awake to find yourself manager of Ross County F.C.
+// const randomNumber = [0,1,2,3,4,5,6,7]
 
-//  This comes after Malky Mackay was sacked last week for being bad at his job.
+const bottomSix = ["Ross County", "St Johnstone", "Hibs", "Motherwell"]
 
-// Chairman Roy MacGregor said he had "known for a number of years that Derek wanted to come".
-// "We had 70 applications to go through, but the name Derek Adams kept coming back," he said.
-// "For us, it was that knowledge, determination and passion for Ross County that was the deciding factors.
-// "When we decided that was the route we wanted to go, we got on to it fairly quickly over the weekend and, with Morecambe's agreement, we managed to attract Derek back to the club."
-// This will be your 3rd time managing Ross County.`,
-//     image: greetings,
-//     alt: "Distorted image of Derek Adams holding a Ross County scarf above his head.",
-//     loopCountUpdate: "loopCount",
-//     options: [
-//       {
-//         text: "Let's get cracking",
-//         nextText: 2,
-//       },
-//       {
-//         text: "Bring it on",
-//         nextText: 2,
-//       },
-//    ]
-//   },
-//   {
-//     id: 2,
-//     date: "25/11/23",
-//     text: 
-// `You are about to play Kilmarnock. 
+const topSix = ["Dundee", "Hearts", "St Mirren", "Kilmarnock", "Aberdeen"]
 
-// The game is at Victoria Park, Dingwall.`,
-//     image: victoriaPark,
-//     alt: "Victoria Park (aka The Global Energy Stadium), Dingwall.",
-//     loopCountUpdate: 0,
-//     options: [
-//       {
-//         text: "Muck about with the team, put your own stamp on it",
-//         nextText: 3,
-//       },
-//       {
-//         text: "Just do what Malky did",
-//         nextText: 3,
-//       },
-//     ]
-//     },
+const championsLeague = ["Dynamo Kyiv", "FC Twente", "Partizan Belgrade", "Lille", "Fenerbahçe", "Slavia Prague", "FC Salzburg", "Club Brugge"]
+
+const goalsAgainst = [3, 5, 7, 11, 19]
+
+const cool = ["rad", "sweet", "groovy", "neato", "hypercool"];
+
+function getRandomItem(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
+// let index = getRandomItem(randomNumber)
+
+const texts = [
+  {
+    id: 1,
+    date: "15/10/23",
+    text: 
+`You awake to find yourself manager of Glasgow Rangers F.C.
+
+ This comes after your predecessor had - after a promising start - fucked it.
+
+ BUT THAT WON'T HAPPEN TO YOU EH`,
+    image: newManager,
+    alt: "A man without a face holding up a Rangers shirt.",
+    options: [
+      {
+        text: "I be manage Rangers",
+        nextText: 2,
+      },
+      {
+        text: "Brrm brrm, let's go",
+        nextText: 2,
+      },
+   ]
+  },
+  {
+    id: 2,
+    date: "25/11/23",
+    text: `You meet the assembled squad. You talk about how they're good players but seem to have lost confidence, but you believe in them. As you speak you swear you can hear the most beautiful singing.`,
+    image: pipe,
+    alt: "Victoria Park (aka The Global Energy Stadium), Dingwall.",
+    loopCountUpdate: 0,
+    options: [
+      {
+        text: "Muck about with the team, put your own stamp on it",
+        nextText: 3,
+      },
+      {
+        text: "Just do what Malky did",
+        nextText: 3,
+      },
+    ]
+    },
 //   {
 //     id: 3,
 //     date: "25/11/23",
@@ -1562,8 +1538,9 @@
 //                     }
 //           ],
 //   },
-// ];
+// `You have signed ${signings[index].name}, a ${signings[index].position}, ${signings[index].transfer}`,
+// image: `${signings[index].image}`,
+];
 
 
-
-// export default texts;
+export default texts;
