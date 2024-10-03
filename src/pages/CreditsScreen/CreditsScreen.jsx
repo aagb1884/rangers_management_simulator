@@ -7,7 +7,7 @@ import "./creditsScreen.css";
 function CreditsScreen() {
   return (
     <section className="creditsScreen-container">
-      <h1 className="creditsScreen-header">Credits</h1>
+      <h1 className="creditsScreen-header">Credits (which I haven't updated yet)</h1>
       <div className="creditsScreen-block">
         <h2 className="creditsScreen-text">Written and developed by{" "}<a
         className="creditsScreen-personalLink"

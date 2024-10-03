@@ -18,7 +18,7 @@ function MainComponent({
   }) {
     const [menuToggle, setMenuToggle] = useState(false);
 
-    const handleMenuToggle = () => {
+      const handleMenuToggle = () => {
       setMenuToggle(!menuToggle);
     };
 
@@ -47,7 +47,10 @@ function MainComponent({
           {text}</p>
         </div>
         <div className="mainComponent-options">
+
+          {idLeft === null && idRight === null ? <></> :
           <div className="mainComponent-buttons">
+
           <button
             onClick={() => setOption(idLeft)}
             className="mainComponent-leftBtn"
@@ -61,6 +64,7 @@ function MainComponent({
             {btnRight}
           </button>
         </div>
+          }
       </div>
       <Footer />
     </div>
