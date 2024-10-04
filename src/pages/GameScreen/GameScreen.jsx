@@ -50,7 +50,7 @@ function GameScreen() {
         <MainComponent
           key={text.id}
           text={shotMessage ? 
-              `${text.text}:
+              `${text.text}
 
               ${shotMessage}` : 
               text.text}
