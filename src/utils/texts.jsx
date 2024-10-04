@@ -123,7 +123,9 @@ import godzilla from '../images/godzilla-fight.gif';
 import splash from '../images/splash.png';
 import staffBarrel from '../images/staff_barrel.png';
 import dayToday from '../images/daytoday.jpg';
-import scanners from '../images/Scanners_head_explode_screenshot.jpg';
+import breakingNews from '../images/breaking_news.gif';
+import clydesideWizard from '../images/clydesideWizard.png';
+
 
 const signings = [
   {"nam201e": "Fenton", "position": ", a Pressing Forward",  "image": fenton, "on a leash": "for £400,000"},
@@ -151,7 +153,7 @@ const randomNumber = [0,1,2,3,4]
 
 const bottomSix = ["Ross County", "St Johnstone", "Hibs", "Motherwell"]
 
-const topSix = [{"club": "Dundee", "insult": "bams who were too edgy for Forfar."}, 
+const topSix = [{"club": "Dundee", "insult": "bam-addled jam addicts"}, 
 {"club": "Hearts", "insult": "halloumi-quaffing milquetoast protestants."}, 
 {"club": "St Mirren", "insult": "scarf-weaving airport wankers."}, 
 {"club": "Kilmarnock", "insult": "clinically depressed pie-fuckers."}, 
@@ -1875,7 +1877,7 @@ You eat the wizard.`,
     options: [
       {
         text: "Prepare yourself for death.",
-        nextText: 89
+        nextText: 90
             },
             {
               text: "Ask him to shoot you in the dick again.",
@@ -1907,8 +1909,8 @@ You eat the wizard.`,
 {
     id: 88,
     text: "You have been shot in the dick again by Craig Whyte.",
-    image: pipe,
-    alt: "Collapsing on the floor, as if giving up",
+    image: breakingNews,
+    alt: "'Breaking News' gif",
     shotInDickUpdate: 1,
     options: [
       {
@@ -1944,11 +1946,11 @@ You eat the wizard.`,
     
     There is a gaping hole in his chest.
     
-    With his remaining strength, the dying central midfielder hoists Craig Whyte towards his mouth, and then with his last breaths sings a single perfect note directly into the evil wizard’s face. The skin and flesh is torn from his skull as his brain implodes, the effect of which is not dissimilar to someone filling a chicken with raspberry Slush Puppie and throwing it through a thresher.
+    With his remaining strength, the dying midfielder hoists Craig Whyte towards his mouth, and then with his last breaths sings a single perfect note directly into the evil wizard’s face. The skin and flesh is torn from his skull as his brain implodes, the effect of which is not dissimilar to someone filling a chicken with raspberry Slush Puppie and throwing it through a thresher.
     
     Ryan Jack falls backwards into the river, a peaceful expression on his face.`,
-    image: scanners,
-    alt: "A head explodes",
+    image: clydesideWizard,
+    alt: "Craig Whyte prepares to shoot Ryan Jack.",
     shotInDickUpdate: -100000,
     options: [
       {
