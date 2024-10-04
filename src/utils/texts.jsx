@@ -278,7 +278,7 @@ const texts = [
     options: [
       {
         text: "Behold my wisdom: Football is simple, like pies. You put the meat in the pastry. You put the ball in the net. But sometimes it is a vegetarian or vegan alternative like beans or macaroni. Still, you must put it in the pie. That is football, that is life.",
-        nextText: 7,
+        nextText: 8,
       },
       {
         text: "Attention scum. Kneel before my might. You shall live out the rest of your days in abject fear, watching helplessly as I bend the world to my will; knowing you are utterly powerless to stop me, that you are not important enough for me to destroy.",
