@@ -290,6 +290,7 @@ function CreditsScreen() {
            Ibrox Line Up by Federico Mera</a> on <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">Creative Commons 2.0 Deed</a>.
           </li>
           All image editing done with <a href="https://www.gimp.org/">GIMP</a>.
+          Lovecraftian translations done with <a href="https://lingojam.com/RLyehian">Lingo Jam</a>.
         </ul>
       </div>
           

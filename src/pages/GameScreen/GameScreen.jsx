@@ -20,8 +20,8 @@ function GameScreen() {
   }, [option]);
 
   const shotMessages = {
-    1: "Good for you",
-    2: "Yeah, don't let them kink shame you.",
+    2: "Good for you",
+    3: "Yeah, don't let them kink shame you.",
     5: "If it feels good and you're consenting how can it be wrong?",
     10: "'Yeah come on Craig ruin me like you ruined the football club.'",
     15: "'More I say. More.'",
@@ -37,7 +37,7 @@ function GameScreen() {
     100: `You have been shot in the dick by Craig Whyte one hundred times. Please download this certificate: 
     
     https://tinyurl.com/kxfyuvcs`,
-    105: "Well that's probably it isn't it?",
+    105: "Well that's probably it isn't it? Nothing else happens if you keep pressing these.",
     200: "Yeah no, that's it.",
     300: "I hope this was worth it.",
   };
