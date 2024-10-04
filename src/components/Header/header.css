@@ -1,4 +1,4 @@
-.header-container {
+.gers-header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10,21 +10,21 @@
   z-index: 1;
 }
 
-.header-link {
-  color: var(--primaryColor);
+.gers-header-link {
+  color: var(--gersPrimaryColor);
   text-decoration: none;
   transition: 0.5s;
   margin: 0 2px;
   z-index: 1;
 }
 
-.header-link:hover {
-  color: var(--secondaryColor);
+.gers-header-link:hover {
+  color: var(--gersSecondaryColor);
   transition: 0.5s;
 }
 
 @media (max-width: 1024px) {
-  .header-container {
+  .gers-header-container {
     font-size: 0.9rem;
   }
 }

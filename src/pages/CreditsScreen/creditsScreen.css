@@ -1,6 +1,6 @@
-.creditsScreen-container {
+.gers-creditsScreen-container {
   font-family: "Poppins", monospace;
-  color: var(--primaryColor);
+  color: var(--gersPrimaryColor);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -12,34 +12,35 @@
 background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,51,160,1) 28%, rgba(0,118,200,1) 60%, rgba(0,212,255,1) 100%);
 }
 
-.creditsScreen-header {
+.gers-creditsScreen-header {
   font-size: 1.75rem;
 }
 
-.creditsScreen-block {
+.gers-creditsScreen-block {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   margin: 1vw;
 }
 
-.creditsScreen-text {
+.gers-creditsScreen-text {
   margin: 0.5vw;
 }
 
 a:link {
-  color: var(--secondaryColor);
+  color: var(--gersSecondaryColor);
 }
 a:visited {
   color: rgb(152, 2, 2);
+  text-shadow: 1px white;
 }
 
 
-.creditsScreen-screenLink {
+.gers-creditsScreen-screenLink {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--gersPrimaryColor);
   background-color: var(--secondaryBackground);
-  border: 1px solid var(--primaryColor);
+  border: 1px solid var(--gersPrimaryColor);
   text-decoration: none;
   padding: 0.5rem 2.5rem;
   margin: 0.5rem;
@@ -47,33 +48,33 @@ a:visited {
   animation: btn-load 1s ease-in;
 }
 
-.creditsScreen-screenLink:hover {
-  color: var(--primaryColor);
-  box-shadow: inset 200px 0 0 0 var(--secondaryColor);
+.gers-creditsScreen-screenLink:hover {
+  color: var(--gersPrimaryColor);
+  box-shadow: inset 200px 0 0 0 var(--gersSecondaryColor);
 }
 
-.creditsScreen-personalLink {
-  color: var(--secondaryColor);
+.gers-creditsScreen-personalLink {
+  color: var(--gersSecondaryColor);
   margin-bottom: 2vh;
   text-decoration: none;
   transition: 0.25s;
 }
 
-.creditsScreen-personalLink:hover {
-  color: var(--secondaryColor);
+.gers-creditsScreen-personalLink:hover {
+  color: var(--gersSecondaryColor);
   scale: 1.1;
   transition: 0.25s;
 }
 
-.imageCreditsList, .audioCreditsList {
+.gers-imageCreditsList {
   line-height: 3;
   margin-bottom: 15px;
   border-style: outset;
-  background-color: rgba(2, 0, 36, 0.2);
+  background-color: rgba(8, 3, 117, 0.5);
   }
 
 
-.creditsScreen-content > h2 {
+.gers-creditsScreen-content > h2 {
   text-align: center;
 }
 

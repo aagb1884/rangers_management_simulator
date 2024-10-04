@@ -5,15 +5,15 @@ import DescriptionScreen from "../DescriptionScreen/DescriptionScreen";
 
 function AboutScreen() {
   return (
-    <div className="aboutScreen-container">
-      <h1 className="aboutScreen-title">A Glasgow Rangers Management Simulator</h1>
+    <div className="gers-aboutScreen-container">
+      <h1 className="gers-aboutScreen-title">A Glasgow Rangers Management Simulator</h1>
       <h2>An Overly Interactive Text-Adventure Game</h2>
       <DescriptionScreen />
-        <div className="aboutScreen-linksContainer">
-        <Link className="aboutScreen-link" to="/">
+        <div className="gers-aboutScreen-linksContainer">
+        <Link className="gers-aboutScreen-link" to="/">
           {">"} Home
         </Link>
-        <Link className="aboutScreen-link" to="/credits">
+        <Link className="gers-aboutScreen-link" to="/credits">
           {">"} Credits
         </Link>
       </div>

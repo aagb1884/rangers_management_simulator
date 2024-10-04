@@ -1,65 +1,67 @@
-.descriptionScreen-container {
+.gers-descriptionScreen-container {
   font-family: "Poppins", monospace;
-  color: var(--primaryColor);
+  color: var(--gersPrimaryColor);
   animation: descriptionScreen-load 400ms ease-in 200ms;
   animation-fill-mode: forwards;
   transform: translateY(-50px);
   opacity: 0;
 }
 
-.descriptionScreen-header {
-  border-top: 5px solid var(--secondaryColor);
+.gers-descriptionScreen-header {
+  border-top: 5px solid var(--gersSecondaryColor);
   margin: 0;
   padding: 2vh;
   text-align: center;
 }
 
-.descriptionScreen-text {
+.gers-descriptionScreen-text {
   
   font-size: 1.4rem;
   padding: 2vh 2vw;
   margin: 0 1vw;
-  border-top: 5px solid var(--secondaryColor);
-  border-bottom: 5px solid var(--secondaryColor);
+  border-top: 5px solid var(--gersSecondaryColor);
+  border-bottom: 5px solid var(--gersSecondaryColor);
 }
 
-.descriptionScreen-image {
+.gers-descriptionScreen-image {
   display: block;
-  border: 5px solid var(--secondaryColor);
+  border: 5px solid var(--gersSecondaryColor);
   width: 512px;
   max-width: 90vw;
   object-fit: cover;
   margin: 0 auto 2vh;
 }
 
-.descriptionScreen-link {
-  color: var(--secondaryColor);
+.gers-descriptionScreen-link {
+  color: var(--gersSecondaryColor);
+  text-shadow: 1px white;
   text-decoration: none;
 }
 
-.descriptionScreen-link:hover {
-  color: var(--secondaryColor);
+.gers-descriptionScreen-link:hover {
+  color: var(--gersSecondaryColor);
   text-decoration: underline;
 }
 
 a:link {
-  color: var(--secondaryColor);
+  color: var(--gersSecondaryColor);
 }
 a:visited {
   color: rgb(152, 2, 2);
+  text-shadow: 1px white;
 }
 
-.descriptionScreen-subHeader {
+.gers-descriptionScreen-subHeader {
     font-size: 1.4rem;
 }
-.techStack-list{
+.gers-techStack-list{
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.descriptionScreen-socialMediaLink {
-  border-top: 1px solid var(--secondaryColor);
+.gers-descriptionScreen-socialMediaLink {
+  border-top: 1px solid var(--gersSecondaryColor);
   padding-top: 1rem;
 }
 

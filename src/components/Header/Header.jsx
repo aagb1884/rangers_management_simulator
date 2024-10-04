@@ -5,16 +5,16 @@ import "./header.css";
 function Header() {
 
   return (
-    <div className="header-container">
-      <Link className="header-link" to="/">
+    <div className="gers-header-container">
+      <Link className="gers-header-link" to="/">
         Start Screen
       </Link>
             
-      <Link className="header-link" to="/about">
+      <Link className="gers-header-link" to="/about">
         About
       </Link>
 
-      <Link className="header-link" to="/credits">
+      <Link className="gers-header-link" to="/credits">
         Credits
       </Link>
   

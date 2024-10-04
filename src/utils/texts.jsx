@@ -100,13 +100,12 @@ import clipboard2 from '../images/pexels-photo-7567602.jpeg';
 import clipboard3 from '../images/scientist_PNG38.png';
 import clipboard4 from '../images/smiling-businessman-working-on-a-clipboard.jpg';
 import clipboard5 from '../images/clipboard_drawing.jpeg';
-import clipboard6 from '../images/woman-in-business-suit-writing-on-clipboard.jpg';
 import clipboard7 from '../images/Vet_Students_Clinical_Pig_2006-08.jpg';
 import tynecastle from '../images/Tynecastle_Park,_January_2018.jpg';
 import gorgie from '../images/gorgie-farm.jpg';
 import buckled from '../images/buckled.jpg';
 import facepalm from '../images/Paris_Tuileries_Garden_Facepalm_statue.jpg';
-import championsLeagueLogo from '../images/UEFA_Champions_League_Logo_Wordmark.svg.png';
+import championsLeagueLineUp from '../images/champions.jpg';
 import houseElves from '../images/house_elves.png';
 import shit from '../images/shit-goal.gif';
 import hoffmeister from '../images/hofmeister-george-bear-719463.jpg';
@@ -128,19 +127,19 @@ import clydesideWizard from '../images/clydesideWizard.png';
 
 
 const signings = [
-  {"nam201e": "Fenton", "position": ", a Pressing Forward",  "image": fenton, "on a leash": "for £400,000"},
+  {"name": "Fenton", "position": ", a Pressing Forward",  "image": fenton, "transfer": "on a leash"},
   {"name": "Frida Kahlo", "position": ", an Attacking Midfielder",  "image": frida, "transfer": "on loan"},
   {"name": "Spider-man 3", "position": ", a Target Man",  "image": spiderman3, "transfer": "for £258 million"},
   {"name": "Morrissey", "position": ", a Right Winger",  "image": morrissey, "transfer": "in return for releasing his latest album"},
   {"name": "Martin Luther", "position": ", a Right Back",  "image": martinLuther, "transfer": "for £4.7 million"},
-  {"name": "The Krankies", "position": ", a Carrilero",  "image": krankies, "transfer": "on loan from the Birmingham Hippodrome"},
+  {"name": "the Krankies", "position": ", a Carrilero",  "image": krankies, "transfer": "on loan from the Birmingham Hippodrome"},
   {"name": "Craig Charles", "position": ", a Sweeper Keeper",  "image": craigCharles, "transfer": "f"},
   {"name": "Joffrey", "position": ", a Left Wing Back",  "image": joffrey, "transfer": "on loan"},
   {"name": "Geri Halliwell", "position": ", a Ball Winning midfielder",  "image": geri, "transfer": "on loan"},
   {"name": "Jardel (now)", "position": ", a Centre Forward",  "image": jardel, "transfer": "on loan"},
   {"name": "Davros, creator of the Daleks", "position": ", a Segundo Volante",  "image": davros, "transfer": "on loan"},
-  {"name": "This old guy in a nappy", "position": ", an Inverted Full-Back",  "image": nappy, "transfer": "on loan"},
-  {"name": "The Jolly Green Giant", "position": ", a Roaming Playmaker",  "image": jollyGreen, "transfer": "on loan"},
+  {"name": "this old guy in a nappy", "position": ", an Inverted Full-Back",  "image": nappy, "transfer": "on loan"},
+  {"name": "the Jolly Green Giant", "position": ", a Roaming Playmaker",  "image": jollyGreen, "transfer": "on loan"},
   {"name": "Rupert Grint", "position": ", an Anchor Man",  "image": grint, "transfer": "on loan"},
   {"name": "Grimace", "position": ", a No-Nonsense Centre Back",  "image": grimace, "transfer": "on loan"},
   {"name": "Billy Bear Ham", "position": "(Ham)",  "image": billyBear, "transfer": "on loan"},
@@ -168,18 +167,44 @@ const cool = ["rad", "sweet", "groovy", "neato", "wicked sick", "totally tubular
 
 const lowerLeague = ["Elgin City", "East Fife", "Annan", "Kelty Hearts", "Fourth Lanark"]
 
+const death = [
+  `"What is grief? (Touch my bum)" - Paul Bettany, 2021`,
+  `"War is bad." - Call of Duty`,
+  `"Death is not the opposite of life, just as mouth is not the opposite of anus." - Haruki Murakami`,
+  `"The goal isn't to live forever. It's simply to live longer than everyone else so you can take all their stuff." - Chuck Palahniuk`,
+  `"Death smiles at us all, like an ol creepy bastard." - Marcus Aurelius`,
+  `"Death is the loss of everything all at once, except sheltered accommodation." - Julie Salamon`,
+  `"Death has but one terror, that you will be buried with your foot touching someone else's foot." - Eric Hoffer`,
+  `"Life is growth. Not like that, ew." - Morihei Ueshiba`,
+  `"How wonderful is death! Death and his cousin Absolutely Buckled" - Percy Bysshe Shelley`,
+  `"The dead cannot cry out for justice. That's just trapped wind." - Lois McMaster Bujold`,
+  `"I would rather die a meaningful death than to live in Twechar." - Corazon Aquino`
+]
+
 function getRandomItem(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
 
+function getRandomAndRemove(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    const randomItem = array[randomIndex];
+    array.splice(randomIndex, 1); 
+    return randomItem;
+}
+
 let index = getRandomItem(randomNumber)
 let index2 = getRandomItem(randomNumber)
 
-let transferIndex1 = getRandomItem(signingsNumbers)
-let transferIndex2 = getRandomItem(signingsNumbers)
-let transferIndex3 = getRandomItem(signingsNumbers)
-let transferIndex4 = getRandomItem(signingsNumbers)
-let transferIndex5 = getRandomItem(signingsNumbers)
+let alternativeCool = [...cool]
+console.log(alternativeCool);
+let availableSignings = [...signingsNumbers];
+
+let transferIndex1 = getRandomAndRemove(availableSignings);
+let transferIndex2 = getRandomAndRemove(availableSignings);
+let transferIndex3 = getRandomAndRemove(availableSignings);
+let transferIndex4 = getRandomAndRemove(availableSignings);
+let transferIndex5 = getRandomAndRemove(availableSignings);
+let transferIndex6 = getRandomAndRemove(availableSignings);
 
 const texts = [
   {
@@ -521,6 +546,7 @@ const texts = [
     id: 20,
     text: 
     `You feel your team is lacking a few players to take you to the next level, such as post-human defier of entropy, a defender who isn’t broken and a central creative midfielder. Your scouts have taken a look at a young Dutch prospect who fits the bill, bags of potential and likely to have a huge sell-on value. 
+    
     You recommend putting everything into signing him, and getting a loan signing for cover in defence.
     
     Meanwhile you are playing ${topSix[index].club} in the League Cup Final. How do you fire up your charges?`,
@@ -665,6 +691,7 @@ shotInDickUpdate: 0,
     text: `Your Director of Football tells you that there is good news and bad news on the transfer front. 
     
     The hot young Dutch prospect has moved to ${getRandomItem(championsLeague)} instead, but you have agreed terms with a possible replacement: the Welsh superstar...Michael Sheen.
+    
     Sheen will be in character the entire time as a promising young Dutch midfielder, and has agreed a very reasonable £200,000 per week wage (the majority of which will be donated to a pioneering leek sanctuary near Swansea).`,
     image: galaxyBrain,
     alt: "A galaxy brain operating on a higher plane of thought.",
@@ -744,9 +771,11 @@ shotInDickUpdate: 0,
 {
     id: 31,
     text: `The signing of Dutch football prodigy Jheronomus van Doodmeester (as played by Michael Sheen) is greeted with gushing praise. 
+    
     Tom English describes it as ‘thinking outside of the box – literally’. 
     Kris Boyd simply and enigmatically says ‘Violence is mint’. 
     Michael Stewart says ‘Sorry, he’s a 55-year-old actor, what the hell?’ but nobody likes him so it doesn’t matter.
+    
     A journalist asks if you will be putting van Doodmeester straight into the first team in the Scottish Cup tie against ${getRandomItem(lowerLeague)}?`,
 
     image: sheen1,
@@ -989,7 +1018,7 @@ text: "Tell the press that once you really put your stamp on the team you’ll c
     shotInDickUpdate: 0,
            options: [
 {
-text: "Go in and explore?",
+text: "Go in and explore.",
         nextText: 44
       },
 {
@@ -1954,11 +1983,11 @@ You eat the wizard.`,
     shotInDickUpdate: -100000,
     options: [
       {
-        text: "Join in with the tributes.",
+        text: "So much death.",
         nextText: 91
             },
             {
-              text: "Break the staff over your knee and walk away.",
+              text: "What can man do against such reckless hate?",
         nextText: 91
                     }
           ],
@@ -2188,15 +2217,15 @@ You eat the wizard.`,
     id: 103,
     text: `You have signed a Giant Leg.`,
     image: giantLeg,
-    alt: "Collapsing on the floor, as if giving up",
+    alt: "A giant leg.",
     shotInDickUpdate: 0,
     options: [
       {
-        text: `${getRandomItem(cool)}`,
+        text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 104
             },
             {
-              text: `${getRandomItem(cool)}`,
+              text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 104
                     }
           ],
@@ -2220,17 +2249,17 @@ You eat the wizard.`,
   },
   {
     id: 105,
-    text: `You have signed ${signings[transferIndex2].name} ${signings[transferIndex2].position}, ${signings[transferIndex2].transfer}.`,
+    text: `You have signed ${signings[transferIndex2].name}${signings[transferIndex2].position}, ${signings[transferIndex2].transfer}.`,
     image: `${signings[transferIndex2].image}`,
     alt: `Your new signing, ${signings[transferIndex2].name}`,
     shotInDickUpdate: 0,
     options: [
       {
-        text: `${getRandomItem(cool)}`,
+        text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 106
             },
             {
-              text: `${getRandomItem(cool)}`,
+              text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 106
                     }
           ],
@@ -2254,17 +2283,17 @@ You eat the wizard.`,
   },
   {
     id: 107,
-    text: `You have signed ${signings[transferIndex3].name} ${signings[transferIndex3].position}, ${signings[transferIndex3].transfer}.`,
+    text: `You have signed ${signings[transferIndex3].name}${signings[transferIndex3].position}, ${signings[transferIndex3].transfer}.`,
     image: `${signings[transferIndex3].image}`,
     alt: `Your new signing, ${signings[transferIndex3].name}`,
     shotInDickUpdate: 0,
     options: [
       {
-        text: `${getRandomItem(cool)}`,
+        text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 108
             },
             {
-              text: `${getRandomItem(cool)}`,
+              text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 108
                     }
           ],
@@ -2288,17 +2317,17 @@ You eat the wizard.`,
   },
   {
     id: 109,
-    text: `You have signed ${signings[transferIndex4].name} ${signings[transferIndex4].position}, ${signings[transferIndex4].transfer}.`,
+    text: `You have signed ${signings[transferIndex4].name}${signings[transferIndex4].position}, ${signings[transferIndex4].transfer}.`,
     image: `${signings[transferIndex4].image}`,
     alt: `Your new signing, ${signings[transferIndex4].name}`,
     shotInDickUpdate: 0,
     options: [
       {
-        text: `${getRandomItem(cool)}`,
+        text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 110
             },
             {
-              text: `${getRandomItem(cool)}`,
+              text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 110
                     }
           ],
@@ -2322,17 +2351,17 @@ You eat the wizard.`,
   },
   {
     id: 111,
-    text: `You have signed ${signings[transferIndex1].name} ${signings[transferIndex1].position}, ${signings[transferIndex1].transfer}.`,
+    text: `You have signed ${signings[transferIndex1].name}${signings[transferIndex1].position}, ${signings[transferIndex1].transfer}.`,
     image: `${signings[transferIndex1].image}`,
     alt: `Your new signing, ${signings[transferIndex1].name}`,
     shotInDickUpdate: 0,
     options: [
       {
-        text: `${getRandomItem(cool)}`,
+        text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 112
             },
             {
-              text: `${getRandomItem(cool)}`,
+              text: `${getRandomAndRemove(alternativeCool)}`,
         nextText: 112
                     }
           ],
@@ -2356,7 +2385,7 @@ You eat the wizard.`,
   },
   {
     id: 113,
-    text: `You have signed ${signings[transferIndex5].name} ${signings[transferIndex5].position}, ${signings[transferIndex5].transfer}. Happy now?`,
+    text: `You have signed ${signings[transferIndex5].name}${signings[transferIndex5].position}, ${signings[transferIndex5].transfer}. Happy now?`,
     image: `${signings[transferIndex5].image}`,
     alt: `Your new signing, ${signings[transferIndex5].name}`,
     shotInDickUpdate: 0,
@@ -2390,9 +2419,9 @@ You eat the wizard.`,
   },
   {
     id: 115,
-    text: `Strewth. Alright, you have signed ${getRandomItem(signings).name}.`,
-    image: clipboard6,
-    alt: "Woman in business suit writing on a clipboard",
+    text: `Strewth. Alright, you have signed ${signings[transferIndex6].name}.`,
+    image: `${signings[transferIndex6].image}`,
+    alt: `Your new signing, ${signings[transferIndex6].name}`,
     shotInDickUpdate: 0,
     options: [
       {
@@ -2476,8 +2505,8 @@ You eat the wizard.`,
   {
     id: 120,
     text: `You’ve beaten Motherwell well, and now it’s time for the Champions League qualifiers.`,
-    image: championsLeagueLogo,
-    alt: "The Champions League logo",
+    image: championsLeagueLineUp,
+    alt: "Ibrox during a Champions League match",
     shotInDickUpdate: 0,
     options: [
       {
@@ -2562,7 +2591,7 @@ You eat the wizard.`,
     id: 125,
     text: `You have probably died and should do something else.
     
-    "What is grief? (Touch my bum)" - Paul Bettany, 2021`,
+    ${getRandomItem(death)}`,
     image: skull,
     alt: "A skull, a wilting flower, and a sand timer.",
     shotInDickUpdate: 0,

@@ -5,9 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --backgroundColor:rgba(0,212,255,1);
-  --primaryColor: #ffffff;
-  --secondaryColor: red;
+  --gersBackgroundColor:rgba(0,212,255,1);
+  --gersPrimaryColor: #ffffff;
+  --gersSecondaryColor: red;
 }
 
 

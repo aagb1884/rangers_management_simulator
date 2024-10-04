@@ -2,9 +2,9 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="gers-footer-container">
       <a
-        className="footer-link"
+        className="gers-footer-link"
         href="https://github.com/aagb1884/derek_adams_simulator"
         target="_blank"
         rel="noopener noreferrer"
@@ -13,7 +13,7 @@ function Footer() {
       </a>
       <br />
       <a
-        className="footer-link"
+        className="gers-footer-link"
         href="https://andrewblair.co.uk/"
         target="_blank"
         rel="noopener noreferrer"

@@ -68,7 +68,7 @@ function GameScreen() {
     );
   });
 
-  return <div className="gameScreen-container">{components[option - 1]}</div>;
+  return <div className="gers-gameScreen-container">{components[option - 1]}</div>;
 }
 
 export default GameScreen;

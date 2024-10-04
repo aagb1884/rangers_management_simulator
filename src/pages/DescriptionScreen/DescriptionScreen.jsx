@@ -3,15 +3,15 @@ import "./descriptionScreen.css";
 
 function DescriptionScreen() {
   return (
-    <div className="descriptionScreen-container">
+    <div className="gers-descriptionScreen-container">
       
-      <div className="descriptionScreen-text">
+      <div className="gers-descriptionScreen-text">
         
         <div>
           I made this game in React JS after reading an article about making text adventure games in React.
           More info about it can be found{" "}
           <Link
-                className="descriptionScreen-link"
+                className="gers-descriptionScreen-link"
                 href="https://medium.com/@dimterion/making-an-interactive-text-adventure-game-with-react-779667cca2cb"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -32,8 +32,8 @@ function DescriptionScreen() {
       </div>
         <br />
         <div>
-          <h3 className="descriptionScreen-subHeader">Tech Stack</h3>
-          <ul className="techStack-list">
+          <h3 className="gers-descriptionScreen-subHeader">Tech Stack</h3>
+          <ul className="gers-techStack-list">
             <li><Link href="https://react.dev/">React</Link></li>
             <li><Link href="https://v5.reactrouter.com/">React Router</Link></li>
             <li>CSS</li>

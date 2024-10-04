@@ -25,12 +25,12 @@ function MainComponent({
   return (
     <>
     {menuToggle && <Header />}
-    <div className="mainComponent-container">
+    <div className="gers-mainComponent-container">
       
       <h1>You are the Rangers Manager</h1>
       
-        <div className="mainComponent-imageAndText">
-        <label className="mainComponent-menuBtn" htmlFor="menuToggle">
+        <div className="gers-mainComponent-imageAndText">
+        <label className="gers-mainComponent-menuBtn" htmlFor="menuToggle">
       <input
         type="checkbox"
         id="menuToggle"
@@ -39,27 +39,27 @@ function MainComponent({
         onChange={handleMenuToggle}
       />
     </label>
-        <img className="mainComponent-image" src={image} alt={alt} />
-        <p className="mainComponent-text">
+        <img className="gers-mainComponent-image" src={image} alt={alt} />
+        <p className="gers-mainComponent-text">
           <b>{date}</b>
           <br />
           <br />
           {text}</p>
         </div>
-        <div className="mainComponent-options">
+        <div className="gers-mainComponent-options">
 
           {idLeft === null && idRight === null ? <></> :
-          <div className="mainComponent-buttons">
+          <div className="gers-mainComponent-buttons">
 
           <button
             onClick={() => setOption(idLeft)}
-            className="mainComponent-leftBtn"
+            className="gers-mainComponent-leftBtn"
           >
             {btnLeft}
           </button>
           <button
             onClick={() => setOption(idRight)}
-            className="mainComponent-rightBtn"
+            className="gers-mainComponent-rightBtn"
           >
             {btnRight}
           </button>
