@@ -124,7 +124,18 @@ import staffBarrel from '../images/staff_barrel.png';
 import dayToday from '../images/daytoday.jpg';
 import breakingNews from '../images/breaking_news.gif';
 import clydesideWizard from '../images/clydesideWizard.png';
-
+import fanPoll from '../images/fanpoll.jpg';
+import shunting from '../images/shunting.jpg';
+import reddit from '../images/reddit.png';
+import lucifer from '../images/Dore_Lucifer.jpg';
+import empty from '../images/empty.jpg';
+import cloisters from '../images/The_Cloisters_at_Gloucester_Cathedral.jpg';
+import hermit from '../images/hermit.jpg';
+import darkCorridor from '../images/Dunkler_Flur_20220605.png';
+import stainedGlass from '../images/stained_glass.png';
+import gameOver from '../images/gameOver.png';
+import woodenThrone from '../images/woodenThrone.png';
+import bibbleConnor from '../images/biblically_accurate_cb.png';
 
 const signings = [
   {"name": "Fenton", "position": ", a Pressing Forward",  "image": fenton, "transfer": "on a leash"},
@@ -2579,7 +2590,7 @@ You eat the wizard.`,
     options: [
       {
         text: `At least we’ve got a long time to sort things.`,
-        nextText: 125
+        nextText: 126
             },
             {
               text: `I feel like we might not have long to sort things.`,
@@ -2596,6 +2607,255 @@ You eat the wizard.`,
     alt: "A skull, a wilting flower, and a sand timer.",
     shotInDickUpdate: 0,
     options: [],
+  },
+  {
+    id: 126,
+    text: `Fans are restless. The football has not been good. The signings have not gelled.`,
+    image: shunting,
+    alt: "A group gelling well together.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `But you *did* win 3-0 against a team with 1/6th of your budget.`,
+        nextText: 127
+            },
+            {
+              text: `Possibly you should not have replaced your good players with nine centre forwards, eight of whom were banned from the Benelux incels meet up for being ‘a bit much’.`,
+        nextText: 128
+                    }
+    ],
+  },
+  {
+    id: 127,
+    text: `A fan poll comes out which says more fans believe in you than doubt you.`,
+    image: fanPoll,
+    alt: "A fan poll showing slight support for you as manager.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `I'm sure the number of the doubters has no significance.`,
+        nextText: 130
+            },
+            {
+              text: `I will repay their trust in me. You will all see my power.`,
+        nextText: 128
+                    }
+    ],
+  },
+  {
+    id: 128,
+    text: `There are reports on r/ScottishFootball that you have lost the dressing room.`,
+    image: reddit,
+    alt: "The r/ScottishFootball header.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Ridiculous. These players would walk through a brick wall for me.`,
+        nextText: 129
+            },
+            {
+              text: `'Well r/Scottish football should consider deez.'
+              
+              
+              
+              
+              '...You're supposed to say "deez what?".'`,
+        nextText: 129
+                    }
+    ],
+  },
+  {
+    id: 129,
+    text: `You head to tell the squad about your latest tactical masterplan.
+    
+    When you open the door to the dressing room, you find only an empty cupboard.`,
+    image: empty,
+    alt: "An old room containing only a knackered cupboard.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Oh, how weird. Nevermind, surely I have just opened the wrong door by mistake.`,
+        nextText: 131
+            },
+            {
+              text: `Let the paranoia consume you.`,
+        nextText: 131
+                    }
+    ],
+  },
+  {
+    id: 130,
+    text: `The Devil appears to you in a dream and suggests playing James Tavernier in a holding midfield role.`,
+    image: lucifer,
+    alt: "Satan is trapped in the frozen central zone in the Ninth Circle of Hell, Inferno, Canto 34. Illustration by Gustave Doré.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Get Behind Me Satan`,
+        nextText: 128
+            },
+            {
+              text: `Ask Satan his thoughts on inverted wingers.`,
+        nextText: 129
+                    }
+    ],
+  },
+  {
+    id: 131,
+    text: `You wander the corridors of Ibrox, looking for the dressing room.`,
+    image: cloisters,
+    alt: "Long, ornate corridors that go on for ages.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `You try every door, but none of the entities within are your Rangers squad.`,
+        nextText: 132
+            },
+            {
+              text: `Assume that, somehow, Todd Cantwell is responsible.`,
+        nextText: 132
+                    }
+    ],
+  },
+  {
+    id: 132,
+    text: `You have lost track of time. How long have you been here? Who even are you? Isn't there somewhere you're supposed to be?
+    
+    You have so many questions, and only one certainty: your hunger and thirst.`,
+    image: darkCorridor,
+    alt: "A seemingly infinite and sparsly lit corridor.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Start drinking your own piss.`,
+        nextText: 133
+            },
+            {
+              text: `Continue drinking your own piss.`,
+        nextText: 133
+                    }
+    ],
+  },
+  {
+    id: 133,
+    text: `You stagger weakly along, leaning against the walls for support, tripping over your beard.
+    
+    Lying down, you hear a faint tremor through the floor:
+    
+    A high burbling note, fading into static.`,
+    image: hermit,
+    alt: "A naked old man with an incredibly long beard.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Is this death?`,
+        nextText: 125
+            },
+            {
+              text: `Follow the sound.`,
+        nextText: 134
+                    }
+    ],
+  },
+  {
+    id: 135,
+    text: `You lose your footing and tumble forward, rolling down the gentle slope of the corridor until you smash into a rock.
+    
+    Pushing yourself upright, wincing with pain, you find yourself on one side of an old wooden bridge.
+    
+    The air is musty and warm. You can hear, much more clearly, an ethereal song from across seemingly infinite chasm.
+    
+    You feel like you've been here before.`,
+    image: netherbroxExterior,
+    alt: "A bridge across a chasm, an ancient domed building.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Crawl blindly across the walkway.`,
+        nextText: 136
+            },
+            {
+              text: `Follow the sound.`,
+        nextText: 136
+                    }
+    ],
+  },
+  {
+    id: 136,
+    text: `You enter a domed building, the interior of far greater size than the exterior suggested.
+    
+    On an ancient wooden throne are colouful robes and a tall pointed hat. Across these lies a staff decorated with carved runes.
+
+    You can hear the song more clearly than ever, behind a stained glass window.
+    `,
+    image: woodenThrone,
+    alt: "A throne of dark wood with a wizard's robes and staff on it.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Dress in the robes and pick up the staff.`,
+        nextText: 138
+            },
+            {
+              text: `Try to see through the stained glass.`,
+        nextText: 137
+                    }
+    ],
+  },
+  {
+    id: 137,
+    text: `You cannot see clearly through the glass, all you can make out is a vague but giant shape.
+
+    Back in the chair, the staff seems to spark with light, as if calling you.
+    `,
+    image: stainedGlass,
+    alt: "A roughly humanoid shape visible beneath a stained glass window.",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Dress in the robes and pick up the staff.`,
+        nextText: 138
+            },
+            {
+              text: `Drink a bit more piss first.`,
+        nextText: 138
+                    }
+    ],
+  },
+  {
+    id: 138,
+    text: `You don the robes and raise the staff, pointing it at the stained glass. 
+
+    A spark of blue light emerges from the end of the staff and the glass loses its colour, allowing you to see through.
+
+    What you see there triggers the final collapse of your mind, but perhaps you've never understood anything so clearly.
+    `,
+    image: bibbleConnor,
+    alt: "In shadow, a Biblically Accurate Connor Barron",
+    shotInDickUpdate: 0,
+    options: [
+      {
+        text: `Accept your fate.`,
+        nextText: 139
+            },
+            {
+              text: `Follow the sound.`,
+        nextText: 139
+                    }
+    ],
+  },
+  {
+    id: 139,
+    text: `You stand in the midst of the Netherbrox, staff in hand, wearing robes resembling the 2015/16 Third Kit, listening to the song that has guided Rangers through the years.
+    
+    Ah'hri  c' ah'hri ephaiah'hri ah'ehye'drnn
+    nilgh'ri ahagl, nilgh'ru ahagl, c' llll ephaiah'hri
+    
+    You begin the wait for your successor.`,
+    image: gameOver,
+    alt: "You are now a venerable wizard living beneath Ibrox, waiting for the next manager to come.",
+    shotInDickUpdate: 0,
+    options: [ ],
   },
 
 ];
