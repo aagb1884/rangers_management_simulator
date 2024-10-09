@@ -2,10 +2,10 @@ import { useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import "./mainComponent.css";
-
-
+import SaveModal from "../Modals/SaveModal";
 
 function MainComponent({
+  id,
   text,
   date,
   btnLeft,
@@ -17,6 +17,7 @@ function MainComponent({
   alt,
   }) {
     const [menuToggle, setMenuToggle] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false)
 
       const handleMenuToggle = () => {
       setMenuToggle(!menuToggle);
@@ -49,6 +50,7 @@ function MainComponent({
         <div className="gers-mainComponent-options">
 
           {idLeft === null && idRight === null ? <></> :
+          <>
           <div className="gers-mainComponent-buttons">
 
           <button
@@ -63,7 +65,18 @@ function MainComponent({
           >
             {btnRight}
           </button>
+          </div>
+        <div>
+          <button className="gers-startScreen-btn" onClick={() => setModalOpen(true)}>
+            Save Game
+          </button>
+          {modalOpen && (
+          <SaveModal
+          id={id}
+          setModalOpen={setModalOpen} />
+        )}
         </div>
+        </>
           }
       </div>
       <Footer />
