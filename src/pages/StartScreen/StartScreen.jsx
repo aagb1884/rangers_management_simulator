@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
+import LoadModal from "../../components/Modals/LoadModal";
 import "./startScreen.css";
 
 function StartScreen() {
+  const [loadModalOpen, setLoadModalOpen] = useState(false)
   return (
     <div className="gers-startScreen-container">
       
@@ -22,6 +25,13 @@ function StartScreen() {
         <Link className="gers-startScreen-btn" to="/credits">
           Credits
         </Link>
+        <button className="gers-startScreen-btn" onClick={() => setLoadModalOpen(true)}>
+          Load Game
+        </button>
+        {loadModalOpen && (
+          <LoadModal
+          setLoadModalOpen={setLoadModalOpen} />
+        )}
       </div>
       <Footer />
     </div>

@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import MainComponent from "../../components/MainComponent/MainComponent";
 import texts from "../../utils/texts";
 import "./gameScreen.css";
 
 function GameScreen() {
-  const [option, setOption] = useState(texts[0].id);
+  const location = useLocation();
   const [numberOfTimesShotInTheDick, setNumberOfTimesShotInTheDick] = useState(0);
+  const { game_id } = location.state || {}
+  const [option, setOption] = useState(game_id || texts[0].id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -49,6 +52,7 @@ function GameScreen() {
       <>
         <MainComponent
           key={text.id}
+          id={text.id}
           text={shotMessage ? 
               `${text.text}
 
