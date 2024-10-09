@@ -19,6 +19,9 @@ function LoadModal ({setLoadModalOpen}) {
         <section className="text">
             <p>Enter the ID number for the game stage you want here:</p>
             <input 
+            type="number"
+            min="1"
+            max="139"
             placeholder="Enter ID number here"
             onChange={e => setIdNumber(e.target.value)}
             name="load-game"/>
