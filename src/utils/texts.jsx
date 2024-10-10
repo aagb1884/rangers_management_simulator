@@ -180,7 +180,7 @@ const lowerLeague = ["Elgin City", "East Fife", "Annan", "Kelty Hearts", "Fourth
 
 const death = [
   `"What is grief? (Touch my bum)" - Paul Bettany, 2021`,
-  `"War is bad." - Call of Duty`,
+  `"War is bad because death and that." - Call of Duty`,
   `"Death is not the opposite of life, just as mouth is not the opposite of anus." - Haruki Murakami`,
   `"The goal isn't to live forever. It's simply to live longer than everyone else so you can take all their stuff." - Chuck Palahniuk`,
   `"Death smiles at us all, like an ol creepy bastard." - Marcus Aurelius`,
@@ -426,7 +426,7 @@ const texts = [
      options: [
       {
         text: "A TRESemmé victory: professional, affordable.",
-        nextText: 15,
+        nextText: 16,
       },
       {
         text: "Tell the players that celebrating a 2-0 win against St Johnstone is like celebrating breathing in and out or tying your own shoelaces.",

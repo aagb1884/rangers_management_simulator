@@ -17,7 +17,7 @@ function LoadModal ({setLoadModalOpen}) {
           onClick={e => e.stopPropagation()}
         >
         <section className="text">
-            <p>Enter the ID number for the game stage you want here:</p>
+            <p>Enter the ID number for the game stage you want here (1-139):</p>
             <input 
             type="number"
             min="1"
