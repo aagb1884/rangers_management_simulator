@@ -426,7 +426,7 @@ const texts = [
      options: [
       {
         text: "A TRESemmé victory: professional, affordable.",
-        nextText: 16,
+        nextText: 15,
       },
       {
         text: "Tell the players that celebrating a 2-0 win against St Johnstone is like celebrating breathing in and out or tying your own shoelaces.",
@@ -472,7 +472,7 @@ const texts = [
     id: 15,
     text: "Due to your witty response, John Souttar does a big snort laugh and gets a hernia.",
     image: bandages,
-    alt: "The Scotsport panel discuss the latest news in Scottish football.",
+    alt: "Someone covered in bandages, lying on a tree stump for some reason.",
     shotInDickUpdate: 0,
      options: [
       {
@@ -538,7 +538,7 @@ const texts = [
   },
  {
     id: 19,
-    text: "Fortunately your latest quip produces no injuries.",
+    text: "Fortunately your latest quip causes no hilarity-induced injuries.",
     image: wilde,
     alt: "Oscar Wilde",
     shotInDickUpdate: 0,

@@ -7,7 +7,7 @@ function LoadModal ({setLoadModalOpen}) {
     const navigate = useNavigate();
 
     const highWarning = idNumber > 139 ? 'Too high. Stop it.' : '';
-    const lowWarning = idNumber < 1 ? 'Too low. Stop it.' : '';
+    const lowWarning = idNumber < 0 ? 'Too low. Stop it.' : '';
 
     return (
         <div
