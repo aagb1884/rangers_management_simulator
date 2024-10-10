@@ -3,10 +3,12 @@ import { useState } from "react";
 import './modal.css'
 
 function LoadModal ({setLoadModalOpen}) {
-    const [idNumber, setIdNumber] = useState(0);
+    const [idNumber, setIdNumber] = useState(1);
     const navigate = useNavigate();
 
-    console.log(idNumber)
+    const highWarning = idNumber > 139 ? 'Too high. Stop it.' : '';
+    const lowWarning = idNumber < 1 ? 'Too low. Stop it.' : '';
+
     return (
         <div
         className="modal-wrapper"
@@ -18,7 +20,10 @@ function LoadModal ({setLoadModalOpen}) {
         >
         <section className="text">
             <p>Enter the ID number for the game stage you want here (1-139):</p>
+            <div className="warning">
+            <p>{lowWarning}{highWarning}</p>
             <input 
+            id="id-input"
             type="number"
             min="1"
             max="139"
@@ -30,6 +35,7 @@ function LoadModal ({setLoadModalOpen}) {
             state={{ game_id: idNumber }}>
             <button className="load-game-btn">Load Game</button>
             </NavLink>
+            </div>
         </section>
         <button className="modalExit-btn" onClick={() => setLoadModalOpen(false)}>
             Click Here to Return to Game Page
