@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import Footer from "../../components/Footer/Footer";
-import LoadModal from "../../components/Modals/LoadModal";
+import Modal from "../../components/Modals/Modal";
 import "./startScreen.css";
 
 function StartScreen() {
-  const [loadModalOpen, setLoadModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(true)
   return (
     <div className="gers-startScreen-container">
       
@@ -16,21 +15,9 @@ function StartScreen() {
       </div>
       <h2 className="gers-startScreen-subtitle">A Scottish football simulator.</h2>
       <div className="gers-startScreen-menu">
-        <Link className="gers-startScreen-btn" to="/game">
-          Start
-        </Link>
-        <Link className="gers-startScreen-btn" to="/about">
-          About
-        </Link>
-        <Link className="gers-startScreen-btn" to="/credits">
-          Credits
-        </Link>
-        <button className="gers-startScreen-btn" onClick={() => setLoadModalOpen(true)}>
-          Load Game
-        </button>
-        {loadModalOpen && (
-          <LoadModal
-          setLoadModalOpen={setLoadModalOpen} />
+    
+        {modalOpen && (
+          <Modal />
         )}
       </div>
       <Footer />
