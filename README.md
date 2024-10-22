@@ -4,8 +4,6 @@ Currently hosted [here](https://scottish-football-simulators.co.uk/rangers).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses [React Routers](https://reactrouter.com/en/main).
 
-![Screengrab of home page](https://github.com/aagb1884/derek_adams_simulator/assets/113289014/e6bb9856-4b61-4820-85ac-d0fbe48c2ab3)
-
 ## About
 
 I made this game in React JS after [making another one the year before](https://github.com/aagb1884/derek_adams_simulator).
